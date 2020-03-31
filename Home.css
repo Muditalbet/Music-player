@@ -66,9 +66,60 @@ body{
 	margin-top: 20px;
 
 }
+.Player_Buttons_Back, .Player_Buttons_loop, .Player_Buttons_Next, .Player_Buttons_Play, .Player_Buttons_Shuffle{
+	margin-top: 20px;
 
-.Player_Buttons_Shuffle, .Player_Buttons_Back, .Player_Buttons_Play, .Player_Buttons_Next, .Player_Buttons_Loop,{
+}
+.Player_Buttons_Back{
+	margin-left: 650px;
 	display: inline-block;
-	position: relative;
-	text-align: center;
+	position: fixed;
+
+} 
+.Player_Buttons_loop{
+	margin-left: 550px;
+	display: inline-block;
+	position: fixed;
+}
+.Player_Buttons_Next{
+	display: inline-block;
+	margin-left: 850px;
+	position: fixed;
+	
+}
+.Player_Buttons_Play{
+	margin-left: 750px;
+	position: fixed;
+	display: inline-block;
+}
+.Player_Buttons_Shuffle{
+	margin-left: 950px;
+	position: fixed;
+	display: inline-block;	
+}
+.one{
+   width: 50px;
+   display: inline-block;
+   float: left;
+	
+}
+
+.two{
+   width: 50px;
+	display: inline-block;
+	
+}
+
+.three{
+   width: 50px;
+   display: inline-block;
+}
+.four{
+   width: 50px;
+   display: inline-block;
+}
+
+.five{
+   width: 50px;
+	display: inline-block;
 }
