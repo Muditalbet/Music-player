@@ -5,19 +5,21 @@
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Sign Up form</title>
+         <link rel="stylesheet" type="text/css" href="Home.css">
     </head>
-    <body>
+    <body class="body2">
         <div class="wrap">
-            <form class="form" onsubmit="return check()" >
+            <form  onsubmit="return check()" >
             	<div class="title">
-            		LOGIN
+            		<b>LOGIN</b>
             	</div>
                 <div class="input_field">
-                    <label class="lab" >Username</label>
-                    <input type="text" class="input" id="Username" placeholder="Enter your Username" >
+                    <label class="lab" >Username</label><br>
+                    <input type="text" class="input" id="Username" placeholder="Enter your username" >
                 </div>
-                <div class="input_field_q">
-                    <button type="submit" class="btn" id="next"  >Next</button>
+                <div class="next">
+                    <button type="submit" class="btn" id="next">Next</button>
+                    <a class="Create" href="#">New user? Create account</a>
                 </div>
             </form>
         </div>
