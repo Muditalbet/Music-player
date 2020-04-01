@@ -1,4 +1,5 @@
-body{
+
+.body1{
 	background: linear-gradient(to bottom right, #f8ece1, #f6ece1);
 }
 .MainBox{
@@ -103,13 +104,10 @@ body{
    float: left;
 	
 }
-
 .two{
    width: 50px;
-	display: inline-block;
-	
+   display: inline-block;
 }
-
 .three{
    width: 50px;
    display: inline-block;
@@ -118,8 +116,59 @@ body{
    width: 50px;
    display: inline-block;
 }
-
 .five{
    width: 50px;
+   display: inline-block;
+}
+.body2{
+	background-color:white;
+	font-family: sans-serif;
+	color: #666666;
+}
+.wrap{
+	margin: 120px 550px 0 550px;
+	background-color : #ebebe0;
+	padding: 20px 20px 170px 20px;
+	border-radius: 15px;
+	border-right: thick solid grey;
+	border-bottom: thick solid grey;
+}
+.title{
+	font-size: 30px;
+	padding-left: 140px;
+}
+.input_field{
+	margin-top: 40px;
+	margin-left: 60px;
+	font-size: 20px;
+}
+.next{
+	margin-left: 40px;
+}
+.Create{
 	display: inline-block;
+	margin: 35px 0 0 20px;
+	text-decoration:none; 
+	font-size: 14px;
+}
+.btn{
+    color: white;
+    margin-top: 3px;
+    margin-left: 20px;
+    padding: 8px 106px 8px 107px;
+    background-color: blue;
+    font-size: 14px;
+    border-style: hidden;
+}
+.btn:hover{
+	box-shadow: 1px 1px 1px 1px blue;
+}
+.input{
+	width: 220px;
+	padding: 8px 10px 8px 10px; 
+	box-shadow:1px 1px 1px 1px grey;
+	border-style: hidden;
+}
+.input:hover{
+	box-shadow: 1px 1px 1px 1px grey;
 }
