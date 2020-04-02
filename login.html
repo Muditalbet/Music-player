@@ -4,22 +4,31 @@
     <head>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Sign Up form</title>
+         <title>LoginIN</title>
          <link rel="stylesheet" type="text/css" href="Home.css">
     </head>
     <body class="body2">
-        <div class="wrap">
-            <form  onsubmit="return check()" >
+        <div class="Back_Page">
+                <button class="Back_Page_Button">
+                    <img src="svg/less-than.svg" class="Back_Button_Svg">
+                    <a href="home.html" class="Back_Button_Text">BACK</a>
+                </button>
+        </div>
+        <div class="Main_Content">
+            <form  onsubmit="return check()" method="POST" action="login.php">
             	<div class="title">
-            		<b>LOGIN</b>
+            		<p>LOGIN into PLAYER</p>
             	</div>
                 <div class="input_field">
-                    <label class="lab" >Username</label><br>
-                    <input type="text" class="input" id="Username" placeholder="Enter your username" >
+                    <input type="text" class="UID" id="Username" placeholder="Enter your USERNAME" name="Uname" >
+                    <input type="password" class="PWD" id="Password" placeholder="Enter your PASSWORD" name="Pass">
                 </div>
-                <div class="next">
-                    <button type="submit" class="btn" id="next">Next</button>
-                    <a class="Create" href="#">New user? Create account</a>
+                <div class="LOGIN_btn">
+                    <button type="submit" class="btn" id="Login">LOGIN</button>
+                </div>
+                <div class="Create_OR_Recover">
+                    <a class="Create" href="#">CREATE AN ACCOUNT</a>
+                    <a class="Recover" href="#">RECOVER ACCOUNT</a>
                 </div>
             </form>
         </div>
