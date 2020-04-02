@@ -121,54 +121,45 @@
    display: inline-block;
 }
 .body2{
-	background-color:white;
-	font-family: sans-serif;
-	color: #666666;
-}
-.wrap{
-	margin: 120px 550px 0 550px;
-	background-color : #ebebe0;
-	padding: 20px 20px 170px 20px;
-	border-radius: 15px;
-	border-right: thick solid grey;
-	border-bottom: thick solid grey;
+	background-color:black;
+	font-family: roboto;
 }
 .title{
-	font-size: 30px;
-	padding-left: 140px;
+	text-align: center;
+	font-size: 27px;
+	margin-top: 150px;
+	color: white;
 }
 .input_field{
-	margin-top: 40px;
-	margin-left: 60px;
-	font-size: 20px;
-}
-.next{
-	margin-left: 40px;
-}
-.Create{
-	display: inline-block;
-	margin: 35px 0 0 20px;
-	text-decoration:none; 
-	font-size: 14px;
-}
-.btn{
-    color: white;
-    margin-top: 3px;
-    margin-left: 20px;
-    padding: 8px 106px 8px 107px;
-    background-color: blue;
-    font-size: 14px;
-    border-style: hidden;
-}
-.btn:hover{
-	box-shadow: 1px 1px 1px 1px blue;
+	position: absolute;
+	margin-left: 585px;
+	border-bottom: thin solid white;
+	color:white;
 }
 .input{
-	width: 220px;
+	color:white;
+	width: 320px;
+	font-size: 20px;
 	padding: 8px 10px 8px 10px; 
-	box-shadow:1px 1px 1px 1px grey;
 	border-style: hidden;
+	background-color: transparent; 
 }
-.input:hover{
-	box-shadow: 1px 1px 1px 1px grey;
+.btnmain{
+	margin-left: 585px;
+}
+.btn{
+	width: 340px;
+    color: black;
+    margin-top: 54px;
+    padding-top:5px;
+    padding-bottom:5px;  
+    background-color: white;
+    font-size: 20px;
+    border-style: hidden;
+}
+.Create{
+	text-align: center;
+	text-decoration:none; 
+	font-size: 12px;
+	color: white;
 }
