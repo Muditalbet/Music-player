@@ -17,33 +17,45 @@
  					<div class="Bar3"></div>
  				</div>
 	 			<div class="Search">
- 					<input type="text" placeholder="Search...">
+ 					<input id = "searchTag" type="text" placeholder="Search...">
  					<button type="submit">
  						<img src="svg/search.svg" height="18" width="20" >
  					</button>
  				</div>
- 			</div>
+			 </div>
+			 
+			 <div>
+				 <button onclick = "redirect('Slow_Down.mp3')">Slow down</button>
+				 </div>
+				 <div>
+					 <button onclick = "redirect('lalala.mp3')">lalala</button>
+					 </div>
+			 <audio id = "player">
+				<source src="Slow_Down.mp3.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			  </audio>
 
  			<div class="Player">
  				<div class="Player_Buttons">
- 					<div class="Player_Buttons_Shuffle">
+ 					<div class="Player_Buttons_Shuffle" onclick = "shuffle()">
  						<img class="one" src="svg/025-shuffle.svg">
  					</div>
- 					<div class="Player_Buttons_Back">
+ 					<div class="Player_Buttons_Back" onclick = "back()">
  						<img class="two" src="svg/011-back.svg" >
  					</div>
- 					<div class="Player_Buttons_Play">
- 						<img class="three" src="svg/013-play.svg">
+ 					<div class="Player_Buttons_Play" onclick = "pp()">
+ 						<img class="three" id = "bThree" src="svg/013-play.svg">
  					</div>
- 					<div class="Player_Buttons_Next">
+ 					<div class="Player_Buttons_Next" onclick = "next()">
  						<img class="four" src="svg/001-next.svg">
  					</div>
- 					<div class="Player_Buttons_loop">
+ 					<div class="Player_Buttons_loop"onclick = "loop">
  						<img class="five" src="svg/005-loop.svg" >
  					</div>
  				</div>
  			</div>
  		</div>
- 		<script type="text/javascript" src="Home.js"></script>
+		 <script type="text/javascript" src="Home.js"></script>
+		 <script src = "js/playerfunction.js"></script>
  	</body>
  </html>
