@@ -2,12 +2,43 @@
 .body1{
 	background: linear-gradient(to bottom right, #f8ece1, #f6ece1);
 }
+.Header{
+	text-align: center;
+	font-size: 70px;
+}
 .MainBox{
 	width: 1465px;
 	height: 530px;
 	z-index: auto;
 	background: #fbfbfb;
-	margin: 130px 30px;
+	margin: 40px 30px;
+}
+.logout{
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+.photo{
+	position: ;
+	width: 95%;
+	margin-top:7px;
+	margin-left:  8px;
+
+}
+.song_banner{
+	position: absolute;
+	background-color: purple;
+	padding: 0;
+	width: 20%;
+	height: 46%;
+	margin-top: 65px;
+	margin-left: 40px;
+	margin-right: 1130px;
+}
+.imgtext{
+	color: white;
+	font-size: 22px;
+	margin-left: 125px;
 }
 .Bar1, .Bar2, .Bar3 {
   width: 30px;
