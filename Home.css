@@ -78,6 +78,16 @@
 	background: #fbfbfb;
 }
 
+.Player_Song_Slider{
+	position : fixed;
+	bottom: 95px;
+	width: 100%;
+}
+
+#songRange{
+	width: 95%;
+}
+
 .Player {
 	position: fixed;
 	width: 100%;
@@ -98,7 +108,7 @@
 	margin-top: 20px;
 
 }
-.Player_Buttons_Back, .Player_Buttons_loop, .Player_Buttons_Next, .Player_Buttons_Play, .Player_Buttons_Shuffle{
+.Player_Buttons_Back, .Player_Buttons_loop, .Player_Buttons_Next, .Player_Buttons_Play, .Player_Buttons_Shuffle, .Player_Buttons_Volume{
 	margin-top: 20px;
 
 }
@@ -129,6 +139,18 @@
 	position: fixed;
 	display: inline-block;	
 }
+.Player_Buttons_Volume{
+	margin-left: 1050px;
+	position: fixed;
+	display: inline-block;	
+}
+#Range{
+	margin-left: 1105px;
+	margin-top: 35px;
+	position: fixed;
+	display: inline-block;
+	visibility: hidden;
+}
 .one{
    width: 50px;
    display: inline-block;
@@ -150,4 +172,65 @@
 .five{
    width: 50px;
    display: inline-block;
+}
+.six{
+	width: 50px;
+	display: inline-block;
+}
+
+.dynamicImg	{
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin-top: 5px;
+}
+
+.dynamicLoad{
+	width: 300px;
+	margin: 5px;
+	display: inline-block;
+}
+
+#left1{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin-left: 1%;
+	margin-top: 8.3%;
+	position: fixed;
+}
+
+#left2{
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	margin-left: 10%;
+	margin-top: 5%;
+	position: fixed;
+}
+
+#centerA{
+	display: inline-block;
+	position: fixed;
+	width: 600px;
+	height: 600px;
+	margin-left: 25%;
+}
+
+#right2{
+	position: fixed;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	margin-left: 55%;
+	margin-top: 5%;
+}
+
+#right1{
+	position: fixed;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin-left: 75%;
+	margin-top: 8.5%;
 }
