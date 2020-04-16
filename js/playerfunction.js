@@ -34,7 +34,8 @@ function load(){
                 ['files/photos/bad_guy.png','bad_guy', 'files/audios/bad_guy.mp3'],
                 ['files/photos/slow_down.jpg','Slow_Down', 'files/audios/slow_down.mp3'],
                 ['files/photos/new.jpg', 'New', 'files/audios/new.mp3'],
-                ['files/photos/fractures.jpg', 'fractures', 'files/audios/fractures.mp3']
+                ['files/photos/fractures.jpg', 'fractures', 'files/audios/fractures.mp3'],
+                ['files/photos/sunflower.jpg','Sunflower','files/audios/Sunflower.mp3']
             ];
 
             player.src = songs[currentSongId][2];
@@ -48,10 +49,12 @@ function back(){
     
     if(currentSongId == 0){
         currentSongId = songs.length-1;
+        updateBack();
         redirect();
     }
     else{
     currentSongId--;
+    updateBack();
     redirect();
     }
 }
@@ -77,10 +80,12 @@ function next(end = 0){
 
     if(currentSongId == songs.length-1){
         currentSongId = 0;
+        updateNxt();
         redirect();
     }
     else{
     currentSongId++;
+    updateNxt();
     redirect();
     }
 }
@@ -125,7 +130,7 @@ function sliderPlay(){
     }
 }
 
-function update(){
+function updateNxt(){
     
     if(currentSongId != songArr[2]){
     for(var i = 0; i<5; i++){
@@ -142,9 +147,25 @@ function update(){
     }
 }
 
-function redirect(){
+function updateBack(){
+    if(currentSongId != songArr[2]){
+    for(var i = 0; i<5; i++){
+        if(songArr[i] > 0){
+            songArr[i]--;
+        }
+        else{
+            songArr[i] = songs.length-1;
+        }
+    }
+
+    for(var j = 0; j<5; j++){
+        imageMain[j].src = songs[songArr[j]][0];
+    }
+}
+}
+
+function redirect(id){
     player.src = songs[currentSongId][2];
     play = 0;
-    update();
     pp();
 }
