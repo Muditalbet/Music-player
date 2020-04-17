@@ -1,4 +1,3 @@
-//Initially play is off i.e '0'....
 var play = 0;
 var loaded, songs=[];
 var volRange = 0; //Curerntly not visible.
