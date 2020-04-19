@@ -147,7 +147,7 @@ songRange.onchange = function(){
 //slider range changing according to current song....
 player.onplaying = function() {
     songRange.max = player.duration;
-    var myVar = setInterval(sliderPlay, 1500);
+    var myVar = setInterval(sliderPlay, 1000);
 };
 
 function sliderPlay(){

@@ -32,19 +32,19 @@
 		   </div> -->
 		   <!-- <div id = "loaded"></div> -->
 		   <div class = "AlbumArea">
-				<div id = "oneL" class="song_photo" >	
+				<div id = "oneL" class="song_photo" onclick = "redirect(2)">	
 					<img id = "left1" src = "files/photos/lalala.jpeg">
 				</div>
-				<div id = "twoL" class="song_photo" >
+				<div id = "twoL" class="song_photo" onclick = "redirect(1)">
 					<img id = "left2" src = "files/photos/bad_guy.png">
 				</div>
-				<div id = "threeC" class="song_photo" >
+				<div id = "fiveR" class="song_photo" onclick = "redirect(-2)">
 					<img id = "right1" src = "files/photos/fractures.jpg">
 				</div>
-				<div id = "fourR" class="song_photo" >
+				<div id = "fourR" class="song_photo" onclick = "redirect(-1)">
 					<img id = "right2" src = "files/photos/new.jpg">
 				</div>
-				<div id = "fiveR" class="song_photo" onclick = "pp()">
+				<div id = "threeC" class="song_photo" onclick = "pp()">
 					<img id = "centerA" src = "files/photos/Slow_down.jpg">
 				</div>
 			</div>	
@@ -54,8 +54,8 @@
 	   <div class="Footer">
 		   <div class="Player">
 			<div class="Song_Info">
-				<div class="SongPhoto"><img src="files/photos/Slow_down.jpg" id="AlbumArt"></div>
-				<div class="SongName">Slow Down</div>
+				<div class="SongPhoto"><img id="AlbumArt" src="files/photos/Slow_down.jpg" ></div>
+				<div class="SongName" id = "song">Slow Down</div>
 			</div>
 			<div class="mainSide">
 				<div class="Player_Song_Slider">
@@ -74,7 +74,7 @@
 					   <div class="Player_Buttons_Next" onclick = "next()">
 						   <img class="four" src="svg/001-next.svg">
 					   </div>
-					   <div class="Player_Buttons_loop"onclick = "loop">
+					   <div class="Player_Buttons_loop" onclick = "Loop()">
 						   <img class="five" src="svg/005-loop.svg" >					
 					   </div>
 					   <div class="Player_Buttons_Volume" onclick = "volume()">
@@ -90,5 +90,6 @@
 	   </div> 
 	   <script type="text/javascript" src="Home.js"></script>
 	   <script src = "js/playerfunction.js"></script>
+	   <script src = "js/colors.js"></script> 
 	</body>
 </html>
