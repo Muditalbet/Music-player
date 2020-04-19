@@ -10,11 +10,29 @@ body{
 
 #heading{
 	flex: 90%;
+}
+
+.MainHeading{
+	
 	font-size: 72px;
 	color: white;
 	text-decoration: none;
 	margin: 2%;
 	padding-left: 5%;
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+.Comment{
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	margin: 2%;
+	padding-left: 5%;
+	margin-top: 0;
+}
+
+.test{
+	display: inline;
 }
 
 .logout{

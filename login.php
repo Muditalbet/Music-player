@@ -4,7 +4,7 @@
     session_start();
     $error = '';
     if(isset($_SESSION['login_user'])){
-        header("location:home.html");
+        header("location:home.php");
         die();
      }
     if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -20,7 +20,7 @@
         if($count == 1){
             
                 $_SESSION['login_user'] = $Uname;
-                header("location: home.html");
+                header("location: home.php");
 
         }else{
             $error = "Your Login Name or Password is invalid";

@@ -1,3 +1,7 @@
+<?php
+	include('php/session.php')
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,10 +14,13 @@
 	</head>
 	<body class="body1" onload = "load()">
 	   <div class="Header">
-		   <div id="heading">Player</div>
-		   <div class="logout">
+		    <div id="heading">
+				<div class="MainHeading">Player</div>
+				<div class="Comment"><div class = "test">Welcome</div> <div class = "test" style = "color:red"><?php  echo $login_session;?></div></div>
+			</div>
+		    <div class="logout">
 				<a href="php/logout.php" id="signout">Sign Out</a>
-		   </div>
+		    </div>
 	   </div>
 	   <div class="MainBox">
 		   <div>
