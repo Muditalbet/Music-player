@@ -57,7 +57,7 @@
                 <?php echo $error;?>
                 <div class="footer">
                 	<a class="Create" href="Create_Account.php"><P>CREATE AN ACCOUNT</P></a>
-                    <a href="#" class="Create"><p>RECOVER ACCOUNT</p> </a>
+                    <a href="#" class="Create"><p></p> </a>
                 </div>
             </form>
         </div>

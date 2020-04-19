@@ -5,8 +5,9 @@
 .title{
 	text-align: center;
 	font-size: 27px;
-	margin-top: 150px;
+	margin-top: 250px;
 	color: white;
+	position: relative;
 }
 .input_field1{
 	width: 340px;
@@ -40,7 +41,7 @@
     border-style: hidden;
 }
 .footer{
-	margin-top: 230px;
+	margin-top: 270px;
 }
 .Create{
 	text-align: center;
