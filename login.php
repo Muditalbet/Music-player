@@ -10,7 +10,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $Uname = mysqli_real_escape_string($db,$_POST['Uname']);
         $Password = mysqli_real_escape_string($db,$_POST['Pass']);
-        $sql = "SELECT Fname FROM login_details WHERE Uname like '$Uname' and Password like '$Password'";
+        $sql = "SELECT * FROM login_details WHERE Uname like '$Uname' and Password like '$Password'";
         $result = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         //$active = $row['active'];
@@ -18,12 +18,15 @@
         $count = mysqli_num_rows($result);
 
         if($count == 1){
-            
+            if($row['Password'] == $Password){
                 $_SESSION['login_user'] = $Uname;
                 header("location: home.php");
-
+            }
+            else{
+                $error = "Password is incorrect";
+            }
         }else{
-            $error = "Your Login Name or Password is invalid";
+            $error = "Your Login Name is invalid";
         }
 
     }
@@ -34,6 +37,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Sign Up form</title>
@@ -54,7 +58,9 @@
                 <div class="btnmain">    
                     <input type="submit" value = 'Login' class="btn" id="next">
                 </div>
-                <?php echo $error;?>
+                <div class = "report">
+                    <?php echo $error;?>
+                </div>
                 <div class="footer">
                 	<a class="Create" href="Create_Account.php"><P>CREATE AN ACCOUNT</P></a>
                     <a href="#" class="Create"><p></p> </a>

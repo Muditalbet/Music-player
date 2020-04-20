@@ -29,7 +29,7 @@ function load(){
     //         alert(songs);
     //     }
     //     });
-        //Creating song boxes (id, src, imgSrc)....
+    //Creating song boxes (id, src, imgSrc)....
         songs = [['files/photos/lalala.jpeg', 'lalala', 'files/audios/lalala.mp3'],
                 ['files/photos/bad_guy.png','bad_guy', 'files/audios/bad_guy.mp3'],
                 ['files/photos/slow_down.jpg','Slow_Down', 'files/audios/slow_down.mp3'],

@@ -2,6 +2,7 @@
     
     include("php/Config.php");
     session_start();
+    $error = "";
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $Fname = mysqli_real_escape_string($db,$_POST['Fname']);
         $Lname = mysqli_real_escape_string($db,$_POST['Lname']);
@@ -10,7 +11,7 @@
         $Con_pass = mysqli_real_escape_string($db,$_POST['Con_pass']);
 
         if($Pass != $Con_pass) {
-            $error = "password does not match.";
+            $error = "Password does not match.";
         }
         else{
             $sql = "SELECT Uname FROM login_details WHERE Uname = '$Uname'";
@@ -20,7 +21,7 @@
             $count = mysqli_num_rows($result);
 
             if($count >= 1) {
-                $error = "username already taken";
+                $error = "Username already taken";
             }
             else{
                 $addRow = "insert into login_details values('$Fname','$Lname','$Uname','$Pass')";
@@ -38,6 +39,7 @@
 
 <html>
     <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Create an Account</title>
@@ -75,7 +77,9 @@
                 <div class="btnmain">
                     <input type="submit" class="btn" id="Create_Account" value = "Create Account">
                 </div>
-                <?php echo $error ?>
+                <div class="report">
+                    <?php echo $error ?>
+                </div>
             </form>
         </div>
     </body>

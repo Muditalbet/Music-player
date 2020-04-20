@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="Home.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
@@ -19,6 +20,7 @@
 				<div class="Comment"><div class = "test">Welcome</div> <div class = "test" style = "color:red"><?php  echo $login_session;?></div></div>
 			</div>
 		    <div class="logout">
+				<img src="svg/logout.svg" class = "LogoutSvg">
 				<a href="php/logout.php" id="signout">Sign Out</a>
 		    </div>
 	   </div>
