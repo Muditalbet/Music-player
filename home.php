@@ -29,15 +29,6 @@
 			 		Your browser does not support the audio element.
 				 </audio>
 			</div>
-		   <!-- <div class="song_banner">
-			   <div class="photo">
-				   <img src="files/photos/sofia.jpg">
-			   </div>
-			   <div class="Song_name">
-				   Sofia
-			   </div>
-		   </div> -->
-		   <!-- <div id = "loaded"></div> -->
 		   <div class = "AlbumArea">
 				<div id = "oneL" class="song_photo" onclick = "redirect(2)">	
 					<img id = "left1" src = "files/photos/lalala.jpeg">
